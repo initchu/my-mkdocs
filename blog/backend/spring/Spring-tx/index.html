@@ -7,10 +7,10 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <meta name="author" content="苍镜月">
+        <meta name="author" content="褚成志">
       
       
-        <link rel="canonical" href="https://cangjingyue.top/blog/backend/spring/Spring-tx/">
+        <link rel="canonical" href="https://doc.chucz.asia/blog/backend/spring/Spring-tx/">
       
       
         <link rel="prev" href="../Spring-MVC/">
@@ -19,12 +19,12 @@
         <link rel="next" href="../Spring%E4%B8%AD%40Transactional%E5%A4%B1%E6%95%88%E5%9C%BA%E6%99%AF/">
       
       
-      <link rel="icon" href="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg">
+      <link rel="icon" href="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>Spring 事务 - 苍镜月's docs</title>
+        <title>Spring 事务 - chucz's docs</title>
       
     
     
@@ -114,9 +114,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../.." title="苍镜月&#39;s docs" class="md-header__button md-logo" aria-label="苍镜月's docs" data-md-component="logo">
+    <a href="../../../.." title="chucz&#39;s docs" class="md-header__button md-logo" aria-label="chucz's docs" data-md-component="logo">
       
-  <img src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg" alt="logo">
+  <img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -127,7 +127,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            苍镜月's docs
+            chucz's docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -262,13 +262,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/LunaY77/my-mkdocs.git" title="前往仓库" class="md-source" data-md-component="source">
+        <a href="https://github.com/initchu/my-mkdocs.git" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
-    Mkdocs-苍镜月
+    Mkdocs-褚成志
   </div>
 </a>
       </div>
@@ -503,22 +503,22 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="苍镜月&#39;s docs" class="md-nav__button md-logo" aria-label="苍镜月's docs" data-md-component="logo">
+    <a href="../../../.." title="chucz&#39;s docs" class="md-nav__button md-logo" aria-label="chucz's docs" data-md-component="logo">
       
-  <img src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg" alt="logo">
+  <img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png" alt="logo">
 
     </a>
-    苍镜月's docs
+    chucz's docs
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/LunaY77/my-mkdocs.git" title="前往仓库" class="md-source" data-md-component="source">
+      <a href="https://github.com/initchu/my-mkdocs.git" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
-    Mkdocs-苍镜月
+    Mkdocs-褚成志
   </div>
 </a>
     </div>
@@ -3047,7 +3047,7 @@
 
 
   
-    <a href="https://github.com/LunaY77/my-mkdocs.git/edit/main/docs/blog/backend/spring/Spring-tx.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/initchu/my-mkdocs.git/edit/main/docs/blog/backend/spring/Spring-tx.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3056,7 +3056,7 @@
     
       
     
-    <a href="https://github.com/LunaY77/my-mkdocs.git/raw/main/docs/blog/backend/spring/Spring-tx.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/initchu/my-mkdocs.git/raw/main/docs/blog/backend/spring/Spring-tx.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
@@ -3080,7 +3080,7 @@
 <li><strong>ISOLATION_READ_UNCOMMITTED（读未提交）</strong>：其他事务会读取当前事务尚未更改的提交（相当于读取的是这个事务暂时缓存的内容，并不是数据库中的内容）</li>
 </ul>
 <p>首先是<strong>读未提交</strong>级别，此级别属于最低级别，相当于各个事务共享一个缓存区域，任何事务的操作都在这里进行。那么它会导致以下问题：</p>
-<p><img alt="Pasted image 20240820004523" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2024/12/28/pasted-image-20240820004523.png" /></p>
+<p><img alt="Pasted image 20240820004523" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2024/12/28/pasted-image-20240820004523.png" /></p>
 <p>也就是说，事务A最后得到的实际上是一个毫无意义的数据（事务B已经回滚了）我们称此数据为 <strong><em>"脏数据"</em></strong> ，这种现象称为<strong>脏读</strong></p>
 <hr />
 <h3 id="2"><strong>2. 读已提交</strong><a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
@@ -3088,7 +3088,7 @@
 <li><strong>ISOLATION_READ_COMMITTED（读已提交）</strong>：其他事务会读取当前事务已经提交的数据（也就是直接读取数据库中已经发生更改的内容）</li>
 </ul>
 <p>我们接着来看<code>读已提交</code>级别，事务只能读取其他事务已经提交的内容，相当于直接从数据中读取数据，这样就可以避免<strong>脏读</strong>问题了，但是它还是存在以下问题：</p>
-<p><img alt="Pasted image 20240820004721" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2024/12/28/pasted-image-20240820004721.png" /></p>
+<p><img alt="Pasted image 20240820004721" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2024/12/28/pasted-image-20240820004721.png" /></p>
 <p>这正是我们前面例子中提到的问题，虽然它避免了脏读问题，但是如果事件B修改并提交了数据，那么实际上事务A之前读取到的数据依然不是最新的数据，直接导致两次读取的数据<strong>不一致</strong>，这种现象称为<strong>虚读</strong>也可以称为<strong>不可重复读</strong></p>
 <hr />
 <h3 id="3"><strong>3. 可重复读</strong><a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
@@ -3096,7 +3096,7 @@
 <li><strong>ISOLATION_REPEATABLE_READ（可重复读）</strong>：其他事务会读取当前事务已经提交的数据并且其他事务执行过程中不允许再进行数据修改（注意这里仅仅是不允许修改数据）</li>
 </ul>
 <p>因此，下一个隔离级别<strong>可重复读</strong>就能够解决这样的问题（MySQL的默认隔离级别），它规定在其他事务执行时，不允许修改数据，这样，就可以有效地避免不可重复读的问题，但是这样就一定安全了吗？这里仅仅是<strong>禁止了事务执行过程中的UPDATE操作，但是它并没有禁止INSERT这类操作</strong>，因此，如果事务A执行过程中事务B插入了新的数据，那么A这时是毫不知情的，比如：</p>
-<p><img alt="Pasted image 20240820004951" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2024/12/28/pasted-image-20240820004951.png" /></p>
+<p><img alt="Pasted image 20240820004951" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2024/12/28/pasted-image-20240820004951.png" /></p>
 <p>两个人<strong>同时</strong>报名一个活动，两个报名的事务<strong>同时</strong>在进行，但是他们一开始读取到的人数都是<strong>5</strong>，而这时，它们都会认为报名成功后人数应该变成<strong>6</strong>，而正常情况下应该是<strong>7</strong>，因此这个时候就发生了数据的<strong>幻读</strong>现象。</p>
 <hr />
 <h3 id="4"><strong>4. 串行化</strong><a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
@@ -3111,7 +3111,7 @@
 </ul>
 <p><em>（对于虚读和幻读的区分：虚读是某个数据前后读取不一致，幻读是整个表的记录数量前后读取不一致)</em></p>
 <p>最后这张图，请务必记在你的脑海，记在你的心中：</p>
-<p><img src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2024/12/28/17353763265466.jpg" style="height:200px; display: block; margin: auto;"></p>
+<p><img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2024/12/28/17353763265466.jpg" style="height:200px; display: block; margin: auto;"></p>
 <h2 id="_2">事务的传播行为<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="_3">概述<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>当一个 <code>service</code> 中调用了另一个 <code>service</code> 的方法，此时 <code>bservice</code> 的事务传播到了 <code>aservice</code> 中，这样就产生了事务的传播：</p>
@@ -3180,7 +3180,7 @@
 <p><br/> </p>
 <p><strong>第二种情况：挂起A事务，让B事务独立于A事务运行。</strong></p>
 <p>当两个事务需要<strong>各自独立维护自身事务</strong>，单个事务无法独立完成，B事务启动时可以暂时将A事务挂起，即阻塞A，且不向A发送sql，使得其无法提交，而B开启一个新的事务，B执行完毕后A继续。</p>
-<p><img src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2024/12/28/untitled-diagramdrawio1.png" style="height:400px; display: block; margin: auto;"></p>
+<p><img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2024/12/28/untitled-diagramdrawio1.png" style="height:400px; display: block; margin: auto;"></p>
 <hr />
 <h4 id="2-aservice"><strong>2. 当AService无事务</strong><a class="headerlink" href="#2-aservice" title="Permanent link">&para;</a></h4>
 <p><strong>第一种情况：B事务以事务的方式运行</strong></p>
@@ -3373,7 +3373,7 @@
 <h2 id="platformtransactionmanager">核心接口 PlatformTransactionManager<a class="headerlink" href="#platformtransactionmanager" title="Permanent link">&para;</a></h2>
 <h3 id="_5">继承关系与方法基本概览<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>继承关系如下图所示：</p>
-<p><img src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/05/platformtransactionmanager.png" style="height:750px; display: block; margin: auto;"></p>
+<p><img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/05/platformtransactionmanager.png" style="height:750px; display: block; margin: auto;"></p>
 <ul>
 <li>PlatformTransactionManager</li>
 <li>这是一个比较重要的接口。定义了获取事务状态、事务提交、事务回滚等方法</li>
@@ -3547,7 +3547,7 @@ void commit(TransactionStatus status)</code></li>
 <a id="__codelineno-8-54" name="__codelineno-8-54"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-8-55" name="__codelineno-8-55"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p><img alt="" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/05/17360072556113.jpg" /></p>
+<p><img alt="" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/05/17360072556113.jpg" /></p>
 <p>首先通过 <code>doGetTransaction</code> 方法尝试获取当前的事务</p>
 <p><strong>1.</strong> 如果当前存在事务 <code>isExistingTransaction(transaction)</code></p>
 <p>进入 <code>handleExistingTransaction(def, transaction, debugEnabled)</code> 方法，处理对应的事务传播行为</p>
@@ -3824,7 +3824,7 @@ void commit(TransactionStatus status)</code></li>
 <hr />
 <h3 id="_10">执行结果汇总<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <p>排列组合结果如下：</p>
-<p><img src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/04/17360051325588.jpg" style="height:500px; display: block; margin: auto;"></p>
+<p><img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/04/17360051325588.jpg" style="height:500px; display: block; margin: auto;"></p>
 <!--
   Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 
@@ -3892,7 +3892,7 @@ void commit(TransactionStatus status)</code></li>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年10月22日 10:14:27 UTC">2025-10-22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年10月22日 12:37:18 UTC">2025-10-22</span>
   </span>
 
     
@@ -4148,7 +4148,7 @@ void commit(TransactionStatus status)</code></li>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022~2024 苍镜月/All Rights Reserved.
+      Copyright &copy; 2022~2024 褚成志/All Rights Reserved.
     </div>
   
   
@@ -4187,7 +4187,7 @@ void commit(TransactionStatus status)</code></li>
       
       
     
-    <a href="https://github.com/LunaY77" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/initchu" target="_blank" rel="noopener" title="github.com" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   

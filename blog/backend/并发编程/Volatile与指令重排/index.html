@@ -7,10 +7,10 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <meta name="author" content="苍镜月">
+        <meta name="author" content="褚成志">
       
       
-        <link rel="canonical" href="https://cangjingyue.top/blog/backend/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Volatile%E4%B8%8E%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92/">
+        <link rel="canonical" href="https://doc.chucz.asia/blog/backend/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Volatile%E4%B8%8E%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92/">
       
       
         <link rel="prev" href="../ThreadLocal/">
@@ -19,12 +19,12 @@
         <link rel="next" href="../%E4%B8%8D%E5%8F%AF%E4%B8%8D%E8%AF%B4%E7%9A%84Java%E2%80%9C%E9%94%81%E2%80%9D%E4%BA%8B/">
       
       
-      <link rel="icon" href="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg">
+      <link rel="icon" href="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>Volatile与指令重排 - 苍镜月's docs</title>
+        <title>Volatile与指令重排 - chucz's docs</title>
       
     
     
@@ -114,9 +114,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../.." title="苍镜月&#39;s docs" class="md-header__button md-logo" aria-label="苍镜月's docs" data-md-component="logo">
+    <a href="../../../.." title="chucz&#39;s docs" class="md-header__button md-logo" aria-label="chucz's docs" data-md-component="logo">
       
-  <img src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg" alt="logo">
+  <img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -127,7 +127,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            苍镜月's docs
+            chucz's docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -262,13 +262,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/LunaY77/my-mkdocs.git" title="前往仓库" class="md-source" data-md-component="source">
+        <a href="https://github.com/initchu/my-mkdocs.git" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
-    Mkdocs-苍镜月
+    Mkdocs-褚成志
   </div>
 </a>
       </div>
@@ -503,22 +503,22 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="苍镜月&#39;s docs" class="md-nav__button md-logo" aria-label="苍镜月's docs" data-md-component="logo">
+    <a href="../../../.." title="chucz&#39;s docs" class="md-nav__button md-logo" aria-label="chucz's docs" data-md-component="logo">
       
-  <img src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.jpeg" alt="logo">
+  <img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png" alt="logo">
 
     </a>
-    苍镜月's docs
+    chucz's docs
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/LunaY77/my-mkdocs.git" title="前往仓库" class="md-source" data-md-component="source">
+      <a href="https://github.com/initchu/my-mkdocs.git" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
-    Mkdocs-苍镜月
+    Mkdocs-褚成志
   </div>
 </a>
     </div>
@@ -2843,7 +2843,7 @@
 
 
   
-    <a href="https://github.com/LunaY77/my-mkdocs.git/edit/main/docs/blog/backend/并发编程/Volatile与指令重排.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/initchu/my-mkdocs.git/edit/main/docs/blog/backend/并发编程/Volatile与指令重排.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2852,7 +2852,7 @@
     
       
     
-    <a href="https://github.com/LunaY77/my-mkdocs.git/raw/main/docs/blog/backend/并发编程/Volatile与指令重排.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/initchu/my-mkdocs.git/raw/main/docs/blog/backend/并发编程/Volatile与指令重排.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
@@ -2931,7 +2931,7 @@
 </ul>
 <p>根据 JMM 的设计，系统存在一个主内存（Main Memory），Java 中所有变量都存储在主存中，对于所有线程都是共享的；每条线程都有自己的工作内存（Working Memory），各线程的工作内存间彼此独立、互不可见，工作内存中保存的是主存中某些<strong>变量的拷贝</strong>，线程对所有变量的操作都是先对变量进行拷贝，然后在工作内存中进行，不能直接操作主内存中的变量；线程之间无法相互直接访问，线程间的通信（传递）必须通过主内存来完成。</p>
 <p>在线程启动的时候，虚拟机为每个内存分配一块工作内存，不仅包含了线程内部定义的局部变量，也包含了线程所需要使用的共享变量(非线程内构造的对象)的副本，即为了提高执行效率，读取副本比直接读取主内存更快(这里可以简单地将主内存理解为虚拟机中的堆，而工作内存理解为栈(或称为虚拟机栈)，栈是连续的小空间、顺序入栈出栈，而堆是不连续的大空间，所以在栈中寻址的速度比堆要快很多)</p>
-<p><img alt="image.png" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/picgo/20250305133753.png" /></p>
+<p><img alt="image.png" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/picgo/20250305133753.png" /></p>
 <p>对于共享普通变量来说，约定了变量在工作内存中发生变化了之后，必须要回写到主内存(<strong>迟早要回写但并非马上回写</strong>)，但对于<strong>volatile变量</strong>则要求工作内存中发生变化之后，必须<strong>马上</strong>回写到主内存，而线程读取<strong>volatile变量</strong>的时候，必须<strong>马上</strong>到主内存中去取最新值而不是读取本地工作内存的副本，此规则保证了前面所说的“当线程A对变量X进行了修改后，在线程A后面执行的其他线程能看到变量X的变动”。</p>
 <h3 id="22">2.2 不保证原子性<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
 <p>上面提到<strong>volatile</strong>保证了线程间共享变量的<strong>及时可见性</strong>，但整个过程并没有保证同步，这是与volatile的使命有关的，创造它的背景就是在某些情况下可以代替synchronized实现可见性的目的，规避synchronized带来的线程挂起、调度的开销。如果volatile也能保证同步，那么它就是个锁，可以完全取代synchronized了。从这点看，volatile不可能保证同步，也正基于上面的原因，随着synchronized性能逐渐提高，volatile逐渐退出历史舞台。</p>
@@ -2950,7 +2950,7 @@
 <a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="n">iinc</span><span class="w">     </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w">    </span>
 </code></pre></div></td></tr></table></div>
 <p>下面是两个线程的操作顺序 </p>
-<p><img alt="image.png" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/picgo/20250305140953.png" /></p>
+<p><img alt="image.png" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/picgo/20250305140953.png" /></p>
 <p>假如说线程A在做了i+1，但未赋值的时候，线程B就开始读取i，那么当线程A赋值i=1，并回写到主内存，而此时线程B已经不再需要i的值了，而是直接交给处理器去做-1的操作，于是当线程B执行完并回写到主内存，i的值为-1，而不是预期的 0。也就是说，volatile缩短了普通变量在不同线程之间执行的时间差，但仍然存有漏洞，依然不能保证原子性。</p>
 <p>这里必须要提的是，之前所说的 <strong><em>“各线程的工作内存间彼此独立、互不可见，在线程启动的时候，虚拟机为每个内存分配一块工作内存，不仅包含了线程内部定义的局部变量，也包含了线程所需要使用的共享变量(非线程内构造的对象)的副本，即为了提高执行效率”</em></strong> 并不准确。</p>
 <p>如今的volatile的例子已经是很难重现，如本文开头时只有在while死循环时才体现出volatile的作用，哪怕只是加了 <code>System.out.println(1)</code> 这么一小段，普通变量也能达到volatile的效果，这是什么原因呢？</p>
@@ -3071,7 +3071,7 @@
 <a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p><img alt="image.png" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/picgo/20250305144050.png" /></p>
+<p><img alt="image.png" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/picgo/20250305144050.png" /></p>
 <ul>
 <li>全能屏障：mfence（modify/mix Barrier），兼具 sfence 和 lfence 的功能</li>
 </ul>
@@ -3192,7 +3192,7 @@
 <li>关键在于 0:getstatic 这行代码在 monitor 控制之外，可以越过 monitor 读取 INSTANCE 变量的值</li>
 <li>当其他线程访问 INSTANCE 不为 null 时，由于 INSTANCE 实例未必已初始化，那么 t2 拿到的是将是一个未初始化完毕的单例返回，这就造成了线程安全的问题</li>
 </ul>
-<p><img alt="image.png" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/picgo/20250305150743.png" /></p>
+<p><img alt="image.png" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/picgo/20250305150743.png" /></p>
 <h3 id="33">3.3 解决办法<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
 <p>指令重排只会保证串行语义的执行一致性（单线程），但并不会关系多线程间的语义一致性</p>
 <p>引入 volatile，来保证禁止出现指令重排的问题，从而保证单例模式的线程安全性：</p>
@@ -3248,7 +3248,7 @@
 <a id="__codelineno-11-24" name="__codelineno-11-24"></a><span class="mi">40</span><span class="p">:</span><span class="w"> </span><span class="n">areturn</span>
 </code></pre></div></td></tr></table></div>
 <p>最终效果如下图所示</p>
-<p><img alt="image.png" src="https://cangjingyue.oss-cn-hangzhou.aliyuncs.com/picgo/20250305151444.png" /></p>
+<p><img alt="image.png" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/picgo/20250305151444.png" /></p>
 <!--
   Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 
@@ -3316,7 +3316,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年10月22日 10:14:27 UTC">2025-10-22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年10月22日 12:37:18 UTC">2025-10-22</span>
   </span>
 
     
@@ -3572,7 +3572,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022~2024 苍镜月/All Rights Reserved.
+      Copyright &copy; 2022~2024 褚成志/All Rights Reserved.
     </div>
   
   
@@ -3611,7 +3611,7 @@
       
       
     
-    <a href="https://github.com/LunaY77" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/initchu" target="_blank" rel="noopener" title="github.com" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
