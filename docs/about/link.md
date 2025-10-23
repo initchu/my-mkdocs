@@ -18,7 +18,7 @@ hide:
         <img class="ava" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png" />
         <div class="card-header">
           <div>
-          <a href="http://doc.chucz.asia" target="_blank">褚成志's docs</a>
+          <a href="http://www.chucz.asia" target="_blank">褚成志's docs</a>
           </div>
           <div class="info">
             相信的心就是你的魔法！
@@ -56,7 +56,7 @@ hide:
 
     >名称: 褚成志's docs
 
-    >链接: https://doc.chucz.asia
+    >链接: https://www.chucz.asia
 
     >头像: https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/skvZLdl76xBab4C.png
 
@@ -84,7 +84,7 @@ hide:
 
     ```yaml
     - name: 褚成志's docs
-      link: https://doc.chucz.asia
+      link: https://www.chucz.asia
       avatar: https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/skvZLdl76xBab4C.png
       descr: 相信的心就是你的魔法！
     ```
