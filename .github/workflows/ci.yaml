@@ -48,16 +48,16 @@ jobs:
       - run: mkdocs gh-deploy --force
 
       # Step 6: 获取提交信息
-      # - name: Get Commit Information
-      #   id: commit_info
-      #   run: |
-      #     echo "author=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
-      #     echo "message=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
-      #     echo "sha=$(git log -1 --pretty=format:'%H')" >> $GITHUB_ENV
+      - name: Get Commit Information
+        id: commit_info
+        run: |
+          echo "author=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
+          echo "message=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
+          echo "sha=$(git log -1 --pretty=format:'%H')" >> $GITHUB_ENV
 
-      # Step 7: 邮件通知 https://github.com/dawidd6/action-send-mail
+      # Step 7: 邮件通知 https://github.com/initchu/action-send-mail
       # - name: Send Email Notification
-      #   uses: dawidd6/action-send-mail@v3
+      #   uses: initchu/action-send-mail@v3
       #   with:
       #     server_address: smtp.163.com      # 替换为你的 SMTP 服务器地址
       #     username: ${{ secrets.SMTP_USERNAME }} # SMTP 用户名，存储在 GitHub Secrets 中
