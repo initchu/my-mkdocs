@@ -126,30 +126,6 @@ plugins:
   - include_dir_to_nav:
       sort_file: true
       sort_directory: true
-  - sitemap:
-      filename: sitemap.xml
-      sections:
-        - title: 主页
-          path: /
-          priority: 1.0
-        - title: 博客
-          path: /blog/
-          priority: 0.9
-        - title: 后端
-          path: /blog/backend/
-          priority: 0.8
-        - title: 前端
-          path: /blog/frontend/
-          priority: 0.8
-        - title: 操作系统
-          path: /blog/os/
-          priority: 0.8
-        - title: 标签
-          path: /tag/
-          priority: 0.7
-        - title: 关于
-          path: /about/
-          priority: 0.6
   - git-committers:
       enabled: !ENV [CI, false]
       repository: Pale-illusions/my-mkdocs
