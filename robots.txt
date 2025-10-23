@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.chucz.asia/sitemap.xml
+Sitemap: https://doc.chucz.asia/sitemap.xml
