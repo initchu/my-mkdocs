@@ -302,7 +302,7 @@ rt
 
 shell 相关的配置请看 [oh-my-zsh](../tools/oh-my-zsh.md)
 
-or 你可以直接到我的 dotfiles 仓库 **[LunaY-dotfiles](https://github.com/initchu/LunaY-dotfiles)** 找到 zsh 文件夹的 .zshrc
+or 你可以直接到我的 dotfiles 仓库 **[initchu-dotfiles](https://github.com/initchu/initchu-dotfiles)** 找到 zsh 文件夹的 .zshrc
 
 把文件 mv 到 ~ 下
 
@@ -325,7 +325,7 @@ brew install tmux
 tmux
 ```
 
-dotfiles 仓库 **[LunaY-dotfiles](https://github.com/initchu/LunaY-dotfiles)** 找到 tmux 文件夹下的 `.tmux.conf`
+dotfiles 仓库 **[initchu-dotfiles](https://github.com/initchu/initchu-dotfiles)** 找到 tmux 文件夹下的 `.tmux.conf`
 
 然后 mv 到 ~ 文件夹下
 
@@ -415,7 +415,7 @@ brew install picgo --cask
 
 ## idea
 
-我的 ideavim 配置：[ideavimrc](https://github.com/initchu/LunaY-dotfiles/blob/master/ideavim/.ideavimrc)
+我的 ideavim 配置：[ideavimrc](https://github.com/initchu/initchu-dotfiles/blob/master/ideavim/.ideavimrc)
 
 ## vscode
 
@@ -423,8 +423,8 @@ brew install picgo --cask
 brew install --cask visual-studio-code
 ```
 
-我的 vscode + vscode vim 配置：[vscode](https://github.com/initchu/LunaY-dotfiles/tree/master/vscode)
+我的 vscode + vscode vim 配置：[vscode](https://github.com/initchu/initchu-dotfiles/tree/master/vscode)
 
 ## neovim
 
-我的 neovim 配置：[neovim](https://github.com/initchu/LunaY-dotfiles/tree/master/nvim)
+我的 neovim 配置：[neovim](https://github.com/initchu/initchu-dotfiles/tree/master/nvim)
