@@ -9,7 +9,7 @@ status: new
 # Hi, there! I am 褚成志
 
 <p style="text-align: center; margin: 0px;" markdown>
-  <img src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
+  <img src="https://github.com/initchu/picx-images-hosting/raw/master/2025/01/23/106435907.64e97avlwo.webp" alt="arv-anshul" style="width: 300px; border-radius: 50%;" />
   <!-- <p style="text-align: center; font-size: 30px; margin: 0px;"><strong>褚成志</strong></p> -->
     
 <br/>

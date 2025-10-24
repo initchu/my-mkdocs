@@ -15,7 +15,7 @@ hide:
     <div class="link-navigation">
 
       <div class="card">
-        <img class="ava" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png" />
+        <img class="ava" src="https://github.com/initchu/picx-images-hosting/raw/master/2025/01/23/106435907.64e97avlwo.webp" />
         <div class="card-header">
           <div>
           <a href="http://www.chucz.asia" target="_blank">褚成志's docs</a>
@@ -27,7 +27,7 @@ hide:
       </div>
 
       <div class="card">
-        <img class="ava" src="https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/17323639636062.jpg" />
+        <img class="ava" src="https://github.com/initchu/picx-images-hosting/raw/master/2025/01/23/17323639636062.2rvjcxf1ka.webp" />
         <div class="card-header">
           <div>
           <a href="http://www.magic-knowledge.top/ " target="_blank">Knowledge is magic</a>

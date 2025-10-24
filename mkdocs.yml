@@ -9,9 +9,9 @@ theme:
   font: #谷歌字体，自行搜索
     text: Bitter #文本字体
     code: Roboto Mono #代码字体
-  logo: https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png #左上角logo，可插入图片链接
+  logo: https://github.com/initchu/picx-images-hosting/raw/master/2025/01/23/106435907.64e97avlwo.webp #左上角logo，可插入图片链接
 
-  favicon: https://initchu.oss-cn-hangzhou.aliyuncs.com/2025/01/23/106435907.png # 网页icon
+  favicon: https://github.com/initchu/picx-images-hosting/raw/master/2025/01/23/106435907.64e97avlwo.webp # 网页icon
 
   palette:
     - media: "(prefers-color-scheme)"
